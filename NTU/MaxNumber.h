@@ -1,4 +1,5 @@
 extern int max(int num1, int num2) {
+
     int result; 
 
     if(num1 > num2)
@@ -8,3 +9,5 @@ extern int max(int num1, int num2) {
 
     return result;
 }
+
+extern int test_val;

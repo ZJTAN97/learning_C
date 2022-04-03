@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include "MaxNumber.c"
+#include "MaxNumber.h"
 
 #define WIDTH 512
 #define HEIGHT 512
 
 enum Color { Red, Green, Blue };
 
-int max(int num1, int num2);
+int test_val;
 
 int main() {
 
@@ -20,7 +20,10 @@ int main() {
     int maxNumber;
 
     maxNumber = max(5, 10);
-    printf("Max number is %d", maxNumber);
+    test_val = 10;
+
+    printf("Max number is %d\n", maxNumber);
+    printf("Test value is %d", test_val);
 
     return 0;
 }

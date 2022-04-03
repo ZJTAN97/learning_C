@@ -18,8 +18,27 @@ void main(char *argv[]) {
     printf("%d\n", z);
     printf("%p\n", z);
 
-    printf("-- argv example --\n");
-    printf("%c", argv[0]);
-    printf("%c", argv[1]);
+    // printf("-- argv example --\n");
+    // printf("%c", argv[0]);
+    // printf("%c", argv[1]);
+
+
+    int* pc, c;
+    int *memory_loc;
+    int memory;
+    memory = 5;
+    memory_loc = &memory;
+
+    c = 5;
+    pc = &c;
+    c = 1;
+    printf("-- more pointers example --\n");
+    printf("%d\n", c);
+    printf("%d\n", *pc);
+    printf("%d\n", pc);
+
+    printf("%d\n", *pc);
+    printf("%d\n", *memory_loc);
+
 
 }
